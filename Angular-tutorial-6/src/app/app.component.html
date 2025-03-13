@@ -1,0 +1,35 @@
+<h1>If Else || Hide Show || Toggle</h1>
+
+<!-- @if(val > 7) {
+  <div style="background-color: blue; height: 200px; width: 200px;">
+
+  </div>
+} -->
+
+<button (click)="hide()">Hide</button>
+<button (click)="Show()">Show</button>
+<button (click)="toggle()">toggle</button>
+
+<button (click)="toggle()">
+  {{ display ? 'Hide' : 'Show' }}
+</button>
+
+@if(display) {
+  <div style="background-color: green; height: 200px; width: 200px;">
+
+  </div>
+}
+
+<hr>
+
+<button (click)="toggleDiv()">Toggle</button>
+
+@if(DisplayOneDiv) {
+  <div style="background-color: red; height: 100px; width: 1;"></div>"
+}
+
+@else {
+  <div style="background-color: blue; height: 100px; width: 1;"></div>
+}
+
+
